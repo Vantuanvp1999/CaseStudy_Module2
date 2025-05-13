@@ -82,13 +82,13 @@ public class Contacts implements Serializable {
     @Override
     public String toString() {
         return "Contacts{" +
-                "phoneNumber='" + phoneNumber + '\'' +
-                ", group='" + group + '\'' +
-                ", name='" + name + '\'' +
-                ", gender='" + gender + '\'' +
-                ", address='" + address + '\'' +
-                ", birthDate='" + birthDate + '\'' +
-                ", email='" + email + '\'' +
+                "phoneNumber:'" + phoneNumber + '\'' +
+                ", group:'" + group + '\'' +
+                ", name:'" + name + '\'' +
+                ", gender:'" + gender + '\'' +
+                ", address:'" + address + '\'' +
+                ", birthDate:'" + birthDate + '\'' +
+                ", email:'" + email + '\'' +
                 '}';
     }
 }

@@ -201,7 +201,7 @@ public class ContactsManager implements IManager<Contacts> {
 
             if(phone.isEmpty()){
                 System.out.println("Hủy, quay về menu");
-
+                break;
             }
             Contacts contactToDelete=null;
             for (Contacts c: contactsList){

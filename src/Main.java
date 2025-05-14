@@ -7,31 +7,31 @@ public class Main {
     public static void main(String[] args) {
     ContactsManager contactsManager = new ContactsManager();
     menu();
-    int choice = readChoice();
-    while(choice!=0){
+    String choice = readChoice();
+    while(choice!="0"){
         switch (choice){
-            case 1:
+            case "1":
                 contactsManager.displayContacts();
                 break;
-            case 2:
+            case "2":
                 contactsManager.addContact();
                 break;
-            case 3:
+            case "3":
                 contactsManager.editContact();
                 break;
-            case 4:
+            case "4":
                 contactsManager.deleteContact();
                 break;
-            case 5:
+            case "5":
                 contactsManager.searchContact();
                 break;
-            case 6:
+            case "6":
                contactsManager.sortContacByName();
                break;
-            case 7:
+            case "7":
                 contactsManager.addToCSV();
                 break;
-            case 8:
+            case "8":
                 contactsManager.readFromCSV();
                 break;
             default:
@@ -41,10 +41,10 @@ public class Main {
     }
 
     }
-    public static int readChoice(){
+    public static String readChoice(){
         Scanner scanner= new Scanner(System.in);
         System.out.println("Enter your choice: ");
-        return scanner.nextInt();
+        return scanner.nextLine();
     }
     public static void menu(){
         System.out.println("---CHƯƠNG TRÌNH QUẢN LÝ DANH BẠ---");

@@ -234,7 +234,7 @@ public class ContactsManager implements IManager<Contacts> {
 
         List<Contacts> results = new ArrayList<>();
         for (Contacts c:contactsList){
-            if(c.getPhoneNumber().contains(keyword)||c.getName().toLowerCase().contains(keyword)){
+            if(c.getPhoneNumber().contains(keyword)||c.getName().contains(keyword)){
                 results.add(c);
             }
         }
@@ -255,6 +255,7 @@ public class ContactsManager implements IManager<Contacts> {
         contactsList.sort(Comparator.comparing(c->c.getName().toLowerCase()));
         this.displayContacts();
 
+
     }
 
     @Override
@@ -267,6 +268,7 @@ public class ContactsManager implements IManager<Contacts> {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        System.out.println("Đã lưu vào file!");
 
     }
 
